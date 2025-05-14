@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 interface LoginProps {
@@ -87,7 +88,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         </form>
         
         <div className="form-footer">
-          Belum punya akun? <a href="#">Daftar sekarang</a>
+          Belum punya akun? <Link to="/register" className="register-link">Daftar sekarang</Link>
         </div>
       </div>
     </div>

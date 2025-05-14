@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.login-container::before {
+.register-container::before {
   content: '';
   position: absolute;
   top: -10%;
@@ -20,9 +20,9 @@
   z-index: 0;
 }
 
-.login-card {
+.register-card {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -43,21 +43,49 @@
   }
 }
 
-.login-header {
+.register-header {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.login-header h1 {
+.register-header h1 {
   font-size: 28px;
   font-weight: 700;
   color: #333;
   margin-bottom: 10px;
 }
 
-.login-header p {
+.register-header p {
   color: #666;
   font-size: 16px;
+}
+
+.terms-container {
+  margin-bottom: 20px;
+}
+
+.terms-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+  color: #764ba2;
+}
+
+.login-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #764ba2;
 }
 
 .form-group {
@@ -118,26 +146,6 @@
   color: #666;
 }
 
-.form-footer a, .register-link {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.form-footer a:hover, .register-link:hover {
-  text-decoration: underline;
-  color: #764ba2;
-}
-
-.remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -145,18 +153,6 @@
 
 .checkbox-container input {
   margin-right: 8px;
-}
-
-.forgot-password {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
-  color: #764ba2;
 }
 
 .error-message {
@@ -170,7 +166,7 @@
 }
 
 @media (max-width: 480px) {
-  .login-card {
+  .register-card {
     padding: 30px 20px;
   }
 } 
